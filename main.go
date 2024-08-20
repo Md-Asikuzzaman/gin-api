@@ -33,12 +33,6 @@ func findBookById(id string) (*Book, error) {
 	}
 
 	return nil, errors.New("book not found.")
-
-
-
-
-
-
 }
 
 
@@ -105,6 +99,4 @@ func main() {
 	router.PATCH("/api/books", findBookByQuery)
 
 	router.Run()
-
-
 }
